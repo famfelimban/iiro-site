@@ -1,0 +1,339 @@
+body{
+	/*background-image: url("images/background.png");*/
+	min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bodyDiv{
+	position: relative; /* needed for footer positioning*/
+	height: auto !important; /* real browsers */
+	min-height: 100%; /* real browsers */
+	padding-top: 8%;
+}
+
+.staticBarTop{
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index:505;
+	color: black;
+	border-bottom-style: solid;
+	border-bottom-color: #99bfe0; /*#E50B08if changed, change background OF secondaryNav*/
+}
+
+.mainContent{
+	background-color: black;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-left: 1.0%;
+	padding-right: 1.0%;
+	padding-bottom: 2%;
+	background-color: white;/*#f5fffa*/
+	max-width: 100%;
+	margin: 0px;
+	min-height: 485px;
+	position: auto;
+}
+
+/**
+	Top right links to sub-systems Eg. Employees portal.
+*/
+a.portaLinks{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	min-height: 100%;
+}
+
+/**
+	On link hover colour changes.
+*/
+a.portaLinks:hover{
+	color: #eaf2f8;
+}
+
+/**
+	Navigation bar text.
+*/
+a.navLinks{
+	color: black;
+	text-decoration: none;
+}
+
+/**
+	Main container Specific for maintainace pages.
+*/
+.maintainanceContent{
+	padding-top: 2%;
+	padding-left: 1.0%;
+	padding-right: 1.0%;
+	padding-bottom: 2%;
+	background-color: #f5fffa;
+	width: 87%;
+	margin: 0px auto;
+	min-height: 485px;
+	text-align: center;	
+	max-width: 100%;
+	position: relative;	
+}
+
+/**
+	
+*/
+.staticBarBottom{
+	background-color: #fefdfb;/*#001c35;*/	
+	z-index:500;
+	position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/**
+
+*/
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/**
+
+*/
+#socialMedia{
+	float: left;
+	display:inline-block;
+	margin-left: 5%;
+	margin-bottom: :2px;
+	margin-top:2px;
+}
+
+
+/**
+
+*/
+.navLinks{
+	/*width: auto;
+	overflow: hidden;
+	transform: translate(0%, 40%);
+	float: right;
+	margin-right: 5%;
+	color: white;
+	font-weight: bold;*/
+}
+
+
+.navPortal{
+	width: auto;
+	overflow: hidden;
+	transform: translate(0%, 40%);
+	float: right;
+	margin-right: 5%;
+	color: white;
+	font-weight: bold;
+}
+
+/**
+
+*/
+.portal{
+	margin-left: 10px;
+	display:inline-block;
+}
+
+/**
+
+*/
+.secondaryNav{
+	overflow: hidden;
+	margin: 0px auto;
+	background-color: #005fb3;
+	min-width: 100%;
+	font-size: 1.175vw;
+}
+
+/**
+
+*/
+.primaryNav{
+	padding-top: .65%;
+	padding-bottom: .25%;
+	padding-right: 5%;	
+	text-align: right;
+	background-color: white;
+}
+
+/**
+
+*/
+#nav{
+	margin: 0px;
+	height: auto;
+	width: auto;
+	font-weight: bold;
+	padding: 7px;
+	text-align: right;
+	/*transform: translate(-50%, -50%);*/
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-width: 2px;
+	display: inline-flex;
+}
+
+/**
+
+*/
+#nav:hover{
+	border-bottom-style: solid;
+	border-bottom-color: #327ec2;
+	border-width: 2px;
+}
+
+/**
+
+*/
+#navLogo{
+	margin-left: 5px;
+	height: auto;
+	width: auto;
+	display:inline-block;
+	font-weight: bold;
+	padding-left: 2%;
+}
+
+/**
+
+*/
+#socialMediaDiv {
+	width: 30px;
+	height: auto;
+	background: #005fb3;
+	-moz-border-radius: 70%;
+	-webkit-border-radius: 70%;
+	border: 0px;
+	padding: 0px;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align:center;
+	
+}
+
+
+#socialMediaDiv:hover { 
+    background-color: #327ec2;
+}
+
+/***/
+.scrollingBar{
+
+	margin: 0px;
+	position: absolute;
+}
+/**** {box-sizing:border-box}***/
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

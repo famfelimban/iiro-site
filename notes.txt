@@ -1,0 +1,3 @@
+- background has to be changed
+- resizing navigation
+- text resizing
